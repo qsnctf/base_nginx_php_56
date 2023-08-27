@@ -7,6 +7,7 @@ COPY files /tmp/
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.nju.edu.cn/g' /etc/apk/repositories \
     && apk add --update --no-cache nginx \
     && mkdir /run/nginx \
+    && mkdir -p /var/log/nginx \
     # configure file
     && mv /tmp/flag.sh /flag.sh \
     && mv /tmp/docker-entrypoint /usr/local/bin/docker-entrypoint \
