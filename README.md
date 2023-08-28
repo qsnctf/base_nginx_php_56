@@ -1,7 +1,7 @@
 # 说明
 ## 环境
-Linux环境：alpine
-Web服务：Nginx
+Linux环境：alpine\
+Web服务：Nginx\
 Web应用：PHP 5.6
 
 ## 如何使用
